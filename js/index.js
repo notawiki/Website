@@ -128,3 +128,7 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".vigilantes-sub > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+ document.getElementById('access').addEventListener('click', function() {
+   blockstack.redirectToSignIn();
+ })
