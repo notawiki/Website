@@ -130,7 +130,7 @@ var TxtType = function(el, toRotate, period) {
     };
 var session = new UserSession();
  document.getElementById('access').addEventListener('click', function() {
-   session.redirectToSignIn({redirectURI: "https://app.nota.wiki" });
+   session.redirectToSignIn("https://app.nota.wiki");
  })
 
 if (session.isUserSignedIn()){
