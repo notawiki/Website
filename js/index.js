@@ -134,6 +134,5 @@ var TxtType = function(el, toRotate, period) {
  })
 
 if (blockstack.isUserSignedIn()) {
-  var hostname = location.hostname;
-window.location = `https://app.nota.wiki`;
+window.location.replace("https://app.nota.wiki");
  } 
