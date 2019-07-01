@@ -135,6 +135,6 @@ var session = new blockstack.UserSession();
 
 localStorage.setItem('session', session);
 
-if (session.isUserSignedIn()){
+if (session.isSignInPending()){
 window.location.replace("https://app.nota.wiki");
  } 
