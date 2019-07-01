@@ -128,11 +128,11 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".vigilantes-sub > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
-
+var session = new UserSession()
  document.getElementById('access').addEventListener('click', function() {
-   blockstack.redirectToSignIn();
+   session.redirectToSignIn(redirectURI?: "https://app.nota.wiki" );
  })
 
-if (blockstack.isUserSignedIn()) {
+if (session.isUserSignedIn()){
 window.location.replace("https://app.nota.wiki");
  } 
