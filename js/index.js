@@ -128,7 +128,7 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".vigilantes-sub > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
-var session = new UserSession();
+var session = new blockstack.UserSession();
  document.getElementById('access').addEventListener('click', function() {
    session.redirectToSignIn("https://app.nota.wiki");
  })
