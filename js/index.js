@@ -133,6 +133,8 @@ var session = new blockstack.UserSession();
    session.redirectToSignIn();
  })
 
+localStorage.setItem('session', session);
+
 if (session.isUserSignedIn()){
 window.location.replace("https://app.nota.wiki");
  } 
