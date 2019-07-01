@@ -130,7 +130,7 @@ var TxtType = function(el, toRotate, period) {
     };
 var session = new blockstack.UserSession();
  document.getElementById('access').addEventListener('click', function() {
-   session.redirectToSignIn("https://app.nota.wiki");
+   session.redirectToSignIn();
  })
 
 if (session.isUserSignedIn()){
