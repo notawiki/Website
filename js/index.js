@@ -132,3 +132,8 @@ var TxtType = function(el, toRotate, period) {
  document.getElementById('access').addEventListener('click', function() {
    blockstack.redirectToSignIn();
  })
+
+if (blockstack.isUserSignedIn()) {
+  var hostname = location.hostname;
+window.location = `https://app.nota.wiki`;
+ } 
